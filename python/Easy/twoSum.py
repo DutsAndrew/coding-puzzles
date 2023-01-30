@@ -1,32 +1,32 @@
-def twoSum(numbers, target):
-  numbersFound = False
-  firstNumber = 0
-  secondNumber = 0
+def two_sum(numbers, target):
+  numbers_found = False
+  first_number = 0
+  second_number = 0
 
-  while numbersFound == False:
-    if secondNumber < len(numbers): 
-      secondNumber += 1
+  while numbers_found == False:
+    if second_number < len(numbers): 
+      second_number += 1
 
-    if numbers[firstNumber] + numbers[secondNumber] == target and firstNumber != secondNumber:
-      numbersFound = True
+    if numbers[first_number] + numbers[second_number] == target and first_number != second_number:
+      numbers_found = True
       break
 
     #reset for second iteration
-    if secondNumber == len(numbers) - 1 and numbersFound == False:
-      secondNumber = 0
-      firstNumber += 1
+    if second_number == len(numbers) - 1 and numbers_found == False:
+      second_number = 0
+      first_number += 1
 
-  return [firstNumber, secondNumber]
+  return [first_number, second_number]
 
-nums1 = [2,7,11,15]
-target1 = int(9)
+nums_1 = [2,7,11,15]
+target_1 = int(9)
 
-nums2 = [3,2,4]
-target2 = int(6)
+nums_2 = [3,2,4]
+target_2 = int(6)
 
-nums3 = [3,3]
-target3 = int(6)
+nums_3 = [3,3]
+target_3 = int(6)
 
-print(twoSum(nums1, target1))
-print(twoSum(nums2, target2))
-print(twoSum(nums3, target3))
+print(two_sum(nums_1, target_1))
+print(two_sum(nums_2, target_2))
+print(two_sum(nums_3, target_3))
