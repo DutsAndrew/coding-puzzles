@@ -20,7 +20,7 @@ class FirstSolution {
   };
 };
 
-// hashmap solution to reduce this to one iteration
+// hashmap solution to reduce this to one loop
 class BetterSolution {
   public int[] twoSum(int[] nums, int target) {
       Map<Integer, Integer> numbersMap = new HashMap<>();
